@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/txtNoWA"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:hint="Masukkan Nomor Whatsapp"-->
+<!--        android:layout_marginBottom="10dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number"-->
+<!--            android:id="@+id/txtWA"-->
+<!--            />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan No Whatsapp"
+        android:id="@+id/txtNoWA"
+        android:inputType="number"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate URL"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtNoWA"
+        android:id="@+id/btnGenerateURL"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Ingin Hubungi Whatsapp Orang Lain, Tapi gaperlu SAVE nomor tersebut. Klik Link Dibawah."
+        android:id="@+id/txt1"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@id/btnGenerateURL"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtURL"
+        android:layout_below="@id/txt1"
+        android:text="URL WA"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        />
+
+</RelativeLayout>
